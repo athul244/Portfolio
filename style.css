@@ -1,0 +1,281 @@
+*{
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;/* placed in its normal position */
+}
+#navbar{
+    display:flex;/* to make child items side by side(inline) */
+    width: 85%;
+    margin-left: 12%;
+    justify-content: space-between ;/* brings space btw contents horizontally */
+    align-items: center;/* makes elements center vertically */
+}
+#logo{
+    width: 180px;
+}
+.li{
+    list-style: none;/* to remove styling of list items */
+    display: inline;
+    margin: 10px 20px;
+    font-size: 20px;
+}
+/* Pseduo class
+------------
+
+used to define a special state of an element
+eg:
+    hover, active, visited etc . . .
+
+Syntax : element:pseudo{property:value} */
+.li:hover{
+    color:red;
+    font-size: 30px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+button a{
+    text-decoration: none;
+    color: gold;
+}
+#f{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#fp{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+#but{
+    font-size: 30px;
+    width: 300px;
+    border-radius: 6px;
+    border: none;
+    background-color: black;
+    height: 65%;
+}
+#home{
+    margin-top: 8%;
+    margin-left: 4%;
+}
+#pics{
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    bottom: 0px;
+    right:90px;
+}
+.imagegrp{
+    position: absolute;
+    height: 90%;
+    bottom: 0px;
+    left: 20%;
+    transform: translateX(-20%);
+    transition: bottom 1s, left 1s;
+}
+#pics:hover #shape{
+    bottom: 60px;
+}
+#pics:hover #girl{
+    left: 15px;
+}
+#girl{
+    margin-left: -20px;
+}
+#about{
+    margin-top: 200px;
+    margin-left: 4%;
+    /* display: flex; */
+}
+/* #content_img{
+    margin-left: 100px;
+    widt
+} */
+#ims{
+    width: 500px;
+    margin-left: 100px;
+}
+.heading{
+    /* width: 250px;
+    margin-left: 40px; */
+    text-align: center;
+}
+.heading h1{
+    font-size: 35px;
+} 
+.heading p{
+    font-size: 20px;
+    color: green;
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    /* padding: 5% 5%; */
+    gap: 2rem;
+    padding-right: 2%;
+}
+#informations{
+    display: grid;
+    margin-left: 760px;
+    margin-top: -230px;
+    gap: 16%;
+}
+#content_img img{
+    width: 75%;
+}
+#content_details p{
+    text-align: justify;
+    font-size: 18px;
+} 
+.info span{
+    margin-left: 1rem;
+}
+.headingsa{
+    margin-top: 100px;
+    text-align: center;
+}
+.headingsa h1{
+    font-size: 35px;
+} 
+.headingsa p{
+    font-size: 20px;
+    color: green;
+}
+#skillcontainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.barcont h1{
+    /* margin-right: 10px; */
+    margin-top: 2.6rem;
+    width: 30px;
+    height: 35px;
+    margin-bottom: 15px;
+    /* bottom: 100px; */
+    display: flex;
+}
+.barcont span{
+    /* margin-bottom: 200px; */
+    width: 30px;
+    margin-left: 500px;
+    height: 10px;
+    /* margin-top: -9rem; */
+}
+#skill{
+    padding: 8% 8% 0% 8%;
+}
+.barcont{
+    display: grid;
+}
+.bor{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    /* position: absolute; */
+    bottom: 10px;
+    margin-top: -1rem;
+    border-radius: 4px;
+}
+#bors1{
+    background-color: orange;
+    width: 95%;
+}
+#bors2{
+    background-color: orange;
+    width: 88%;
+}
+#bors3{
+    background-color: orange;
+    width: 89%;
+}
+#bors4{
+    background-color: orange;
+    width: 85%
+}
+#bar{
+    margin-top: 20px;
+}
+#ss{
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    /* height: 100px;
+    width: 100px; */
+}
+/* #bigss{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} */
+.ssq , .uparrow{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    /* margin-top: 400px; */
+    align-items: center;
+    justify-content: center;
+    margin: 13px 13px;
+    border-radius: 50%;
+}
+.ssq:hover{
+    background-image: linear-gradient(to right,brown,gold);
+    animation: shake 0.75s;
+}
+.ssq:hover i{
+    color: white;
+    
+}
+.ssq i{
+    color: black;
+    
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg)
+    }
+    20%{
+        transform: rotate(-15deg)
+    }
+    30%{
+        transform: rotate(15deg)
+    }
+    40%{
+        transform: rotate(-15deg)
+    }
+}
+footer{
+    margin: 2.5rem 0px;
+
+}
+footer p{
+    font-weight: 300;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.uparrow a{
+    color: white;
+    background-image: linear-gradient(to right,brown,gold);
+    width: 50px;
+    height: 50px;
+    border-radius:  50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* float: right; */
+    margin-right: -2850px;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
